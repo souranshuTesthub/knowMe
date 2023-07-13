@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="js/ContactMe.js"></script>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/ContactMe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <a id="backtotop"></a>
+    <nav class="navbar" id="navigation">
+      <ul class="nav-list">
+        <div class="logo">
+          <a href="index.html"><img src="images/face1.jpg" alt="logo" /></a>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="MyPortfolio.html">My Portfolio</a></li>
+        <li><a href="MoreOfMe.html">More of Me</a></li>
+        <li><a href="ContactMe.html">Contact Me</a></li>
+      </ul>
+      <div class="right-nav">
+        <input type="text" name="search" id="search" />
+        <button class="button-search">Search</button>
+      </div>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#backtotop">Back to Top</a>
+      <br /><br />
+    </div>
+    <button onclick="openNav()" id="sideBtn">&gt;</button>
+
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">95-C/3 Basundhara Complex</div>
+            <div class="text-two">Canal South Road, Chingrighata</div>
+            <div class="text-three">Kolkata</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">
+              <a class="callto" href="tel: +91 8918706187">+91 8918706187</a>
+            </div>
+            <div class="text-two">
+              <a class="callto" href="tel: +91 9547905490">+91 9547905490</a>
+            </div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">
+              <a class="mailto" href="mailto: souranshu.singha@gmail.com"
+                >souranshu.singha@gmail.com</a
+              >
+            </div>
+            <div class="text-two">
+              <a class="mailto" href="mailto: souranshu.backup@gmail.com"
+                >souranshu.backup@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <br />
+          <br />
+
+          <div class="socials details">
+            <div class="ig">
+              <a
+                href="https://www.instagram.com/souranshu_imvampop/"
+                target="_blank"
+                ><img src=images/ig.png></a
+              >
+            </div>
+            <div class="fb">
+              <a
+                href="https://www.facebook.com/souranshu.scholario/"
+                target="_blank"
+                ><img src=images/fb.png></a
+              >
+            </div>
+            <div class="ld">
+              <a
+                href="https://www.linkedin.com/in/souranshu-singha-666839269/"
+                target="_blank"
+                ><img src=images/ld.png></a
+              >
+            </div>
+            <div class="dc">
+              <a href="#discord"><img src=images/dc.png></a>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send me a message</div>
+          <p>
+            Got a question or suggestion? I'd love to chat! Feel free to reach
+            out to me using the input tabs below or, the contact details
+            provided. I'm all ears and ready to assist you in any way I can.
+          </p>
+          <form action="#backend.php">
+            <div class="input-box">
+              Name: <br /><input type="text" placeholder="Enter your name" />
+            </div>
+            <br />
+            <div class="input-box">
+              Email ID: <br /><input
+                type="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <br />
+            <div class="message">
+              Suggestions/Query: <br /><textarea
+                name="myText"
+                cols="200"
+                rows="10"
+                placeholder="Write here"
+              ></textarea>
+            </div>
+
+            <div class="button">
+              <input type="submit" value="Send Now" />
+              <input type="reset" value="Clear All" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

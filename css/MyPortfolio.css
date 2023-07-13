@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Courgette&family=Shadows+Into+Light&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  background: url(../images/bg3.jpeg);
+  background-blend-mode: lighten;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  z-index: 1;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 33%;
+  border: 3px solid white;
+  border-radius: 500px;
+}
+
+.nav-list {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-nav {
+  width: 50%;
+  text-align: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 30px 35px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke-color: 10px black;
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid #f04363;
+  border-radius: 10px;
+}
+
+.button-search {
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  margin-left: 10px;
+}
+.button-search:hover {
+  background: #5029bc;
+}
+
+.content1 {
+  width: 100%;
+  background: url(../images/bg13.jpg);
+  background-size: cover;
+  height: 80vh;
+}
+
+.section1 {
+  width: 100%;
+  display: flex;
+  padding-top: 100px;
+}
+
+.leftside1 {
+  width: 55%;
+  padding-left: 450px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 5px black, 0 0 5px black;
+  font-family: "Courgette", cursive;
+}
+
+#name {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.from {
+  font-size: 25px;
+}
+
+.rightside1 {
+  width: 45%;
+  display: flex;
+}
+.rightside1 img {
+  width: 50%;
+  border: 5px solid white;
+  border-radius: 90px;
+}
+
+.section1-foot {
+  padding-top: 40px;
+  padding-left: 450px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 5px black, 0 0 5px black;
+  font-family: "Courgette", cursive;
+}

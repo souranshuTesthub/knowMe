@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Courgette&family=Shadows+Into+Light&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  background: url(../images/bg3.jpeg);
+  background-blend-mode: lighten;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  z-index: 1;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 33%;
+  border: 3px solid white;
+  border-radius: 500px;
+}
+
+.nav-list {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-nav {
+  width: 50%;
+  text-align: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 30px 35px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid #f04363;
+  border-radius: 10px;
+}
+.button-search {
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  margin-left: 10px;
+}
+.button-search:hover {
+  background: #5029bc;
+}
+
+.sidenav {
+  margin-top: 78px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: url(../images/bg3.jpeg);
+  background-blend-mode: lighten;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding-left: 1px;
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#sideBtn {
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: fixed;
+  margin-top: 270px;
+  margin-left: 0px;
+  opacity: 50%;
+}
+#sideBtn:hover {
+  background: #5029bc;
+  opacity: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7) url(../images/bg16.jpg);
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.firstsection {
+  height: 100vh;
+}
