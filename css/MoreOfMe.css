@@ -131,9 +131,10 @@
   cursor: pointer;
   transition: all 0.3s ease;
   position: fixed;
-  margin-top: 270px;
+  margin: auto;
   margin-left: 0px;
   opacity: 50%;
+  top: 50%;
 }
 #sideBtn:hover {
   background: #5029bc;
@@ -150,6 +151,7 @@
 }
 
 .section1 {
+  width: auto;
   background: url("../images/bg25.jpg");
   height: 100%;
 }
@@ -231,11 +233,13 @@
   padding-left: 200px;
   padding-right: 200px;
   width: auto;
+  left: 50%;
 }
 .memeshare img {
   transition: transform 0.25s ease;
   margin: 4%;
   border: 5px solid white;
+  left: 50%;
 }
 .memeshare img:active {
   -webkit-transform: scale(1.5);
@@ -247,8 +251,8 @@
 #dots {
   color: white;
   font-size: 50px;
-  position: absolute;
-  padding-top: 260px;
+  position: static;
+  margin-top: 200px;
 }
 #myBtn {
   color: #fff;
@@ -259,9 +263,9 @@
   background: #3e2093;
   cursor: pointer;
   transition: all 0.3s ease;
-  position: absolute;
+  position: static;
   margin-top: 270px;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 #myBtn:hover {
   background: #5029bc;
@@ -348,4 +352,98 @@
 }
 #myBtn3:hover {
   background: #5029bc;
+}
+
+
+.footer{
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #87538f;
+  border: 1px solid white;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  left: 50%;
+  text-shadow: 0 0 5px white, 0 0 5px white;
+}
+#copyright{
+  font-size: 16px;
+}
+
+
+
+@media (max-width: 1174px){
+  .section1{
+    width: fit-content;
+    background-size: contain;
+  }
+  .myspace{
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    display: block;
+  }
+  .leftside{
+    width: 100%;
+    display: block;
+    margin: 10%;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftside img{
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-left: 0%;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rightside{
+    width: 100%;
+    display: block;
+    margin: 10%;
+    margin-top: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro,.introbottom{
+    margin-right: 50px;
+    padding-right: 10%;
+  }
+
+  #memetitle{
+    margin-left: 140px;
+  }
+  #dots,#dots2,#dots3{
+    padding-top: 0px;
+    padding-left: 0%;
+    margin-top: 0%;
+    display: block;
+  }
+  #myBtn,#myBtn2,#myBtn3{
+    margin: auto;
+    display: block;
+  }
+  #dots2,#dots3{
+    margin-top: -25px;
+  }
+  #myBtn2,#myBtn3{
+    margin-top: 2%;
+  }
+  .footer{
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
 }
